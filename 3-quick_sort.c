@@ -70,7 +70,6 @@ void sortLomuto(int *array, int start, int end, size_t size)
 		return;
 
 	pivot_index = lomutoPartition(array, start, end, size);
-	
 	sortLomuto(array, start, pivot_index - 1, size);
 	sortLomuto(array, pivot_index + 1, end, size);
 }
