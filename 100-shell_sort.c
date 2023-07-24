@@ -10,6 +10,8 @@ void shell_sort(int *array, size_t size)
 	size_t pas = 1, i, j;
 	int tmp;
 
+	if (array == NULL || size < 2)
+		return;
 	while (pas < size)
 	{
 		pas = (pas * 3) + 1;
