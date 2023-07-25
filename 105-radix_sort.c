@@ -12,7 +12,7 @@ int get_array_max_value(int *array, size_t size)
 	size_t i;
 
 	for (i = 1, maxi = array[0]; i < size; i++)
-		if (array[i] > max)
+		if (array[i] > maxi)
 			maxi = array[i];
 
 	return (maxi);
