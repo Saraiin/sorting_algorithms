@@ -2,11 +2,11 @@
 
 
 /**
- * heap_devide - sorts pivot
+ * hoare_devide - sorts pivot
  * @array: array to sort
  * @start: start index
  * @end: end index
- * @size: size of array 
+ * @size: size of array
  * Return: index of pivot
  */
 size_t hoare_devide(int *array, size_t start, size_t end, size_t size)

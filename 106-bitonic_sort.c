@@ -57,15 +57,15 @@ void downSort(int *array, int start, int end)
  */
 void arrayInterval(int *array, int start, int end)
 {
-        int i;
+	int i;
 
-        for (i = start; i < end; i++)
-        {
-                if (i != start)
-                        printf(", ");
-                printf("%d", array[i]);
-        }
-        printf("\n");
+	for (i = start; i < end; i++)
+	{
+		if (i != start)
+			printf(", ");
+		printf("%d", array[i]);
+	}
+	printf("\n");
 }
 
 /**

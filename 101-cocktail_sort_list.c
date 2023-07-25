@@ -4,10 +4,10 @@
  * swap_node - swaps two nodes in a douibly linked list
  * @nd1: the first node to swap
  * @nd2: the second node to swap
- * @list: the linked list
+ * @l: the linked list
  * @tail: the tail
  */
-void swap_node(listint_t *nd1, listint_t *nd2, listint_t **list, listint_t **tail)
+void swap_node(listint_t *nd1, listint_t *nd2, listint_t **l, listint_t **tail)
 {
 	listint_t *prev, *curr, *next;
 
@@ -28,12 +28,12 @@ void swap_node(listint_t *nd1, listint_t *nd2, listint_t **list, listint_t **tai
 	next->next = curr;
 
 	if (!(next->prev))
-		*list = next;
+		*l = next;
 
 	if (!(curr->next))
 		*tail = curr;
 
-	print_list(*list);
+	print_list(*l);
 }
 
 /**
